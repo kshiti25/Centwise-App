@@ -1,0 +1,47 @@
+$primary-color: #01CE67;
+$secondary-color: #707070;
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 20px;
+}
+
+.viewChartbtn {
+    border: 2px solid $secondary-color;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    margin-left: 90%;
+    color: $secondary-color;
+    font-weight: bold;
+
+    &:hover {
+        background-color: $primary-color;
+        color: #FFFFFF;
+        border: 2px solid;
+        border-color: darken($primary-color, 10%);
+    }
+}
+
+.flexContainer {
+    margin-top: 10px;
+    @include flexCenter;
+}
+
+.flexChild {
+    flex: 1;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #353434;
+    margin-bottom: 20px;
+}

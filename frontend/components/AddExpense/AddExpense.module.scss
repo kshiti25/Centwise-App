@@ -1,0 +1,236 @@
+$primary-color: #01ce67;
+$secondary-color: #B5B5B5;
+$overlay-color: rgba(49, 49, 49, 0.8);
+$cancel-color: #B70019;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+
+body.activeModal {
+    overflow-y: hidden;
+}
+
+.btnModal {
+    display: block;
+    margin: 2rem auto 0;
+    font-size: 1.125rem;
+    margin-top: -2.5rem;
+}
+
+.modal,
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: $overlay-color;
+}
+
+.modalContent {
+    font-family: Montserrat;
+    margin-top: 50px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 2.8;
+    background-color: #ffffff;
+    padding: 14px 28px;
+    border-radius: 10px;
+    border: 2px solid $primary-color;
+    z-index: 1001;
+    min-height: 20vh;
+    height: auto;
+}
+
+.closeModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+
+    &:hover {
+        background-color: $cancel-color;
+        color: #fff;
+        border-color: #fff;
+    }
+}
+
+.description input {
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.currency {
+    font-size: 1.2em;
+    font-weight: bold;
+
+    input {
+        border: none;
+        outline: none;
+        font-size: x-large;
+        font-size: 1.5em;
+        margin-left: 10px;
+    }
+}
+
+.btn {
+    border-style: solid;
+    border-color: $primary-color;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    padding: 5px 30px;
+    font-family: Montserrat;
+    background-color: #fff;
+    font-weight: bold;
+    color: $primary-color;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+
+    &:hover {
+        border-color: #ffffff;
+        background-color: $primary-color;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    &:active {
+        border-color: darken($primary-color, 10%);
+        font-weight: bold;
+    }
+}
+
+.save,
+.cancel {
+    border: 2px solid #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 5px 30px;
+    box-shadow: 0px 3px 6px #00000029;
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.save {
+    color: #fff;
+    background-color: $primary-color;
+    width: 120px;
+
+    &:hover {
+        background-color: #fff;
+        border-color: $primary-color;
+        color: $primary-color;
+    }
+}
+
+.cancel {
+    color: $cancel-color;
+    background-color: #fff;
+    width: 120px;
+    margin-left: 1em;
+
+    &:active,
+    &:hover {
+        border-color: #fff;
+        background-color: $cancel-color;
+        color: #fff;
+    }
+}
+
+.sideModal {
+    position: fixed;
+    margin-top: -4.5em;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid $primary-color;
+    height: auto;
+    min-height: 15vh;
+    width: 300px;
+    background-color: white;
+    z-index: 1001;
+}
+
+.cancel2 {
+    position: absolute;
+    top: 12px;
+    right: 9px;
+    padding: 5px 7px;
+    background-color: #fff;
+
+    &:hover {
+        background-color: $cancel-color;
+    }
+}
+
+.equalModalContent {
+    width: 1%;
+    margin-top: 50px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    line-height: 2.8;
+    background-color: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 10px;
+    border: 2px solid $primary-color;
+    z-index: 1001;
+    min-height: 20vh;
+    height: auto;
+    z-index: 1002;
+    box-shadow: 2px 4px 10px #00000029;
+}
+
+.cancelEqual {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    padding: 1px 5px;
+}
+
+.label {
+    background-color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 3px 6px #00000029;
+    font-weight: bold;
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.3s ease;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $primary-color;
+        color: #fff;
+    }
+
+    &:checked {
+        cursor: pointer;
+        background-color: $primary-color;
+        color: #fff;
+    }
+}
+
+.card_input_element {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.hr {
+    margin-top: 0px;
+}

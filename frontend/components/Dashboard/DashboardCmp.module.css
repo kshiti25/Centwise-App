@@ -1,0 +1,27 @@
+.mainContainer {
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.summary {
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #353434;
+}
+
+.hr {
+  border: none;
+  height: 1.5px;
+  background-color: #DCDCDC;
+}
+
+.listCard {
+  margin: 20px 0;
+}/*# sourceMappingURL=DashboardCmp.module.css.map */

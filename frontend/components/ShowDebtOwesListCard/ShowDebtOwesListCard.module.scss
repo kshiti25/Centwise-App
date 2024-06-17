@@ -1,0 +1,48 @@
+$border-color: #DCDCDC;
+$text-color: #353434;
+$font-size: 12px;
+$font-weight-bold: bold;
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    @include flexCenter;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    .imgRec {
+        display: inline-block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+        border: 3px solid $border-color;
+        border-radius: 50%;
+
+        img {
+            width: auto;
+            height: 100%;
+            // margin-left: -10px;
+            z-index: -10;
+        }
+    }
+
+    .username {
+        margin-left: 20px;
+        margin-right: 40px;
+        width: 200px;
+        font-size: $font-size;
+        font-weight: $font-weight-bold;
+        color: $text-color;
+    }
+
+    .amount {
+        font-size: $font-size;
+        font-weight: $font-weight-bold;
+        color: $text-color;
+    }
+}

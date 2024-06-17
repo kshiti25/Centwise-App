@@ -1,0 +1,55 @@
+@mixin commonStyles {
+    font-weight: bolder;
+}
+
+$primary-margin: -250px;
+$secondary-margin: -120px;
+
+.expenseItem {
+    display: flex; 
+}
+
+.monthdate {
+    display: flex;
+    flex-direction: column;
+ 
+    .date {
+        font-size: 22px;
+        @include commonStyles;
+        margin-top: -18px;
+    }
+
+    .icon {
+        margin-left: 12px;
+        height: 30px;
+        margin-top: 20px;
+    }
+}
+
+.dataExpense {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+
+    .expense, .lent, .expense_type, .paid, .paidData, .lentData {
+        margin-left: $primary-margin;
+        @include commonStyles;
+    }
+
+    .expense {
+        margin-left: 20px;
+    }
+
+    .expense_type {
+        margin-top: -10px;
+        font-size: smaller;
+    }
+
+    .lent {
+        margin-left: $secondary-margin;
+    }
+
+    .lentData {
+        margin-left: $secondary-margin;
+    }
+}

@@ -1,0 +1,118 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  z-index: 998;
+}
+
+.modelBackground {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1000;
+}
+
+.modalContainer {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  flex-direction: column;
+  padding: 2%;
+  border: 2px solid #01ce67;
+  z-index: 1001;
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: -16%;
+  margin-right: -14em;
+}
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transform: rotate(45deg);
+  color: red;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  width: auto;
+  font-weight: 900;
+  background-color: #01ce67;
+  color: whitesmoke;
+  border-radius: 8px;
+  padding: 5%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-left: 35%;
+}
+
+.email {
+  margin-top: 5%;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: large;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: auto;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+}
+.body:hover {
+  cursor: text;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+.footer button {
+  font-family: "Montserrat", sans-serif;
+  font: normal normal 600 16px/19px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  border-radius: 0.7em;
+  border: 2px solid #ffffff;
+  font-size: 13px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  background-size: 200% 200%;
+  background-color: #01CE67;
+  font-weight: bold;
+  height: 40px;
+  width: 150px;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.footer button:hover {
+  color: black;
+  background-color: #01ce67;
+  border-color: #05fc80;
+}/*# sourceMappingURL=InviteFriendsModal.module.css.map */

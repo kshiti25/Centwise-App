@@ -1,0 +1,73 @@
+$border-color: #232222;
+$group-card-width: 700px;
+$line-position: 15px;
+
+@mixin cardStyles {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+@mixin lineStyles {
+    position: absolute;
+    width: calc(100% - 10px);
+    border-bottom: 1px solid $border-color;
+    bottom: 0;
+    left: $line-position;
+}
+
+.GroupNameCard {
+    @include cardStyles;
+}
+
+.userProfile {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.groupCard {
+    @include cardStyles;
+    align-items: center;
+    width: $group-card-width;
+    margin-bottom: 20px;
+    position: relative;
+
+    .horizontalLine {
+        @include lineStyles;
+    }
+}
+
+.justBeforeTheDp {
+    display: flex;
+    flex-direction: row;
+}
+
+.groupDetails {
+    margin-left: 10px;
+}
+
+.groupName {
+    font-weight: 500;
+}
+
+.groupExpenses {
+    display: flex;
+    flex-direction: row;
+    margin-left: 250px;
+}
+
+.youPaid,
+.youLent {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.paidAmount,
+.lentAmount {
+    font-weight: 900;
+    font-size: larger;
+    margin-top: -15px;
+}

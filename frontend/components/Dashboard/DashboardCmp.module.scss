@@ -1,0 +1,31 @@
+$primary-margin-bottom: 20px;
+$secondary-margin-bottom: 40px;
+$hr-color: #DCDCDC;
+
+.mainContainer {
+    margin-bottom: $primary-margin-bottom;
+}
+
+.container {
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+    margin-bottom: $secondary-margin-bottom; 
+}
+
+.summary {
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #353434;
+}
+
+.hr {
+    border: none;
+    height: 1.5px;
+    background-color: $hr-color;
+}
+
+.listCard {
+    margin: 20px 0;
+}

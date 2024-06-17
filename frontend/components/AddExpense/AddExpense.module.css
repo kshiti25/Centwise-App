@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+body.activeModal {
+  overflow-y: hidden;
+}
+
+.btnModal {
+  display: block;
+  margin: 2rem auto 0;
+  font-size: 1.125rem;
+  margin-top: -2.5rem;
+}
+
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: rgba(49, 49, 49, 0.8);
+}
+
+.modalContent {
+  font-family: Montserrat;
+  margin-top: 50px;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 2.8;
+  background-color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 10px;
+  border: 2px solid #01ce67;
+  z-index: 1001;
+  min-height: 20vh;
+  height: auto;
+}
+
+.closeModal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 7px;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.closeModal:hover {
+  background-color: #B70019;
+  color: #fff;
+  border-color: #fff;
+}
+
+.description input {
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.currency {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.currency input {
+  border: none;
+  outline: none;
+  font-size: x-large;
+  font-size: 1.5em;
+  margin-left: 10px;
+}
+
+.btn {
+  border-style: solid;
+  border-color: #01ce67;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  padding: 5px 30px;
+  font-family: Montserrat;
+  background-color: #fff;
+  font-weight: bold;
+  color: #01ce67;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.btn:hover {
+  border-color: #ffffff;
+  background-color: #01ce67;
+  color: #fff;
+  font-weight: bold;
+}
+.btn:active {
+  border-color: #019b4e;
+  font-weight: bold;
+}
+
+.save,
+.cancel {
+  border: 2px solid #fff;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 5px 30px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.save {
+  color: #fff;
+  background-color: #01ce67;
+  width: 120px;
+}
+.save:hover {
+  background-color: #fff;
+  border-color: #01ce67;
+  color: #01ce67;
+}
+
+.cancel {
+  color: #B70019;
+  background-color: #fff;
+  width: 120px;
+  margin-left: 1em;
+}
+.cancel:active, .cancel:hover {
+  border-color: #fff;
+  background-color: #B70019;
+  color: #fff;
+}
+
+.sideModal {
+  position: fixed;
+  margin-top: -4.5em;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid #01ce67;
+  height: auto;
+  min-height: 15vh;
+  width: 300px;
+  background-color: white;
+  z-index: 1001;
+}
+
+.cancel2 {
+  position: absolute;
+  top: 12px;
+  right: 9px;
+  padding: 5px 7px;
+  background-color: #fff;
+}
+.cancel2:hover {
+  background-color: #B70019;
+}
+
+.equalModalContent {
+  width: 1%;
+  margin-top: 50px;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  line-height: 2.8;
+  background-color: #f1f1f1;
+  padding: 14px 28px;
+  border-radius: 10px;
+  border: 2px solid #01ce67;
+  z-index: 1001;
+  min-height: 20vh;
+  height: auto;
+  z-index: 1002;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1607843137);
+}
+
+.cancelEqual {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  padding: 1px 5px;
+}
+
+.label {
+  background-color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  font-weight: bold;
+  transition: background-color 0.5s ease, color 0.5s ease, border-color 0.3s ease;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+.label:hover {
+  cursor: pointer;
+  background-color: #01ce67;
+  color: #fff;
+}
+.label:checked {
+  cursor: pointer;
+  background-color: #01ce67;
+  color: #fff;
+}
+
+.card_input_element {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.hr {
+  margin-top: 0px;
+}/*# sourceMappingURL=AddExpense.module.css.map */
